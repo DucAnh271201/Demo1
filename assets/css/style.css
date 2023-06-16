@@ -1,0 +1,438 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang
+
+ */
+
+ .row{
+    margin-left: -8px;
+    margin-right: -8px;
+ }
+ .col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+ }
+.mt-8{
+    margin-top: 8px !important; 
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+ .col-3{
+    width: 33.3333%;
+ }
+ .col-full{
+    width: 100%;
+ }
+ .col-half{
+    width: 50%;
+ }
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,.subnav {
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    
+    position: relative;
+    
+
+}
+
+#nav > li > a{
+    color: white;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a
+{
+    color: #000;
+    background-color: #ccc;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 18px;
+    line-height: 38px;
+}
+
+#header .search-btn{
+    float: right;
+    
+    padding: 12px 24px;
+}
+
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: white;
+    font-size: 20px;
+}
+
+#slider {
+   position: relative;
+   margin-top: 46px;
+   padding-top: 50%;
+   background: url('/assets/img/chicago.jpg') top center / cover no-repeat
+ 
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    color: white;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+} 
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    
+} 
+
+#slider .text-gt{
+    font-size: 15px;
+    margin-top: 25px;
+} 
+
+#content {
+
+}
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .content-section .section-heading{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px ;
+    font-size: 30px;
+    margin: 10px 0;
+}
+#content .content-section .section-subheading{
+    text-align: center;
+    margin: 15px 0;
+    color: #ccc;
+    font-style: italic;
+}
+
+#content .content-section .about-text{
+    text-align: justify;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+#content .content-section .member{
+    overflow: hidden;
+    padding: 32px 0;
+
+}
+
+#content .member .member-1{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+    
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .tour-section{
+    background-color: black;
+}
+
+#content .tour-section .section-heading{
+    color: white;
+}
+
+#content .ticket{
+    background-color: white;
+    margin-top: 40px;
+}
+.ticket li{
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket .sold-out{
+padding: 3px 8px;
+margin-left: 16px;
+color: white;
+background-color: #f44336!important;
+}
+
+.ticket .quantity{
+    float: right;
+    padding: 2px 8px;
+    margin-right: 16px;
+    background-color: #000;
+    color: white;
+    border-radius: 16px
+}
+
+.city{
+    /* width: 404px;
+    height: 784px;
+    padding: 32px 8px;
+    margin: 0 16px; */
+    margin-top: 32px;
+    margin-bottom: 48px;
+    overflow: hidden;
+}
+
+
+
+.city .city-content{
+    background-color: white;
+   
+    padding: 16px;
+}
+
+.city .city-img{
+   width: 100%;
+   display: block;
+   
+}
+.city-img:hover{
+    opacity: 0.6;
+}
+.city-name{
+    font-weight: bolder;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.city-time{
+    color: #ccc;
+    margin-bottom: 15px;
+
+}
+
+.city-sub{
+    margin-bottom: 15px;
+}
+
+.button-buy{
+    color: white;
+    background-color:black ;
+    padding: 8px 16px;
+    font-size: 15px;
+    
+}
+
+.button-buy:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.form-submit-btn{
+    background-color: #000;
+    color: white;
+    padding: 8px 16px;
+    float: right;
+    border: none;
+}
+
+.form-submit-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.map-section img{
+    width: 100%;
+}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.mangxahoi-list a{
+    font-size: 24px;
+    color: #000;
+}
+
+.copyright{
+    margin-top: 15px ;
+    margin-bottom: 15px;
+}
+
+.copyright a{
+    color: #000;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+   
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-header {
+    height: 130px;
+    background-color: #009688!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    margin: 15px;
+}
+.modal-input{
+    width: 100%;
+    padding: 8px;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+}
+.modal-contaner{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height:1.5;
+}
+
+.contact-info i[class*="fa-"]{
+    width: 30px;
+}
+
+.contact-form{
+
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#buy-ticket{
+    display: block;
+    padding: 16px;
+    width: 100%;
+    margin: 15px 0;
+    background-color: #009688;
+    color: white;
+}
+
+.modal-help {
+    float: right;
+    margin: 15px;
+}
+a {
+    color: #2196F3;
+}
+.fa-suitcase{
+    margin-right: 16px;
+}
